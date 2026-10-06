@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>나의 스킬 및 작업 도구</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header-container">
+  <div class="slogan-modern-bar">“Less, but better.” — Parametric & Form Design</div>
+  <div class="nav-container">
+    <a href="index.html" class="nav-menu">I AM</a> 
+    <a href="webdesign.html" class="nav-menu">WEB DESIGN</a> 
+    <a href="link.html" class="nav-menu">FAVORITE</a> 
+    <a href="gallery.html" class="nav-menu">GALLERY</a> 
+    <a href="membership.html" class="nav-menu">MEMBERSHIP</a>
+    <a href="skill.html" class="nav-menu">SKILL</a>
+  </div>
+</div>
+<hr><br>
+
+<div class="common-box skill-box">
+  <div class="card-title">나의 디자인 스킬</div>
+
+  <div class="content-card">
+    <b>주요 사용 프로그램 및 툴</b><br><br>
+    <ol style="margin: 0; padding-left: 20px;">
+      <li>Rhino 3D 및 Grasshopper (파라메트릭 디자인 & 보로노이 패턴 구현)</li>
+      <li>Adobe Photoshop / Illustrator (그래픽 및 CMF 프리젠테이션)</li>
+      <li>AutoCAD 및 뱀부랩 슬라이서 (정밀 제도 및 3D 프린팅 출력)</li>
+    </ol>
+  </div>
+
+  <div class="content-card">
+    <b>디자인 역량 요약</b><br><br>
+    <ul style="margin: 0; padding-left: 20px;">
+      <li>곡면 모델링 및 3D 폼 구현 <mark>최우수 역량</mark></li>
+      <li><del>평면적인 2D 작업</del>에서 입체 조형 및 디지털 패브리케이션으로 확장 중</li>
+      <li>소프트웨어 숙련도 조절: 
+        <input type="range" id="skillRange" min="0" max="100" value="90" class="interactive-slider" style="width: 180px;" oninput="document.getElementById('skillValue').innerText = this.value"> 
+        (<span id="skillValue">90</span>%)
+      </li>
+    </ul>
+  </div>
+
+  <div class="content-card">
+    <b>디터 람스의 디자인 철학</b><br><br>
+    <div class="philosophy-flex">
+      <div>
+        <img src="image/Dieter.webp" alt="디터 람스">
+      </div>
+      <div>
+        <blockquote style="margin: 0;">
+          "디자인은 할 수 있는 한 최소한의 디자인이다."<br><br>
+          <i>"Less, but better."</i> - Dieter Rams
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-title">디자인 아카이브 및 철학 상세 보기</div>
+  <details>
+    <summary><b>파라메트릭 디자인 및 알고리즘 조형 비하인드 (클릭해서 펼치기)</b></summary>
+    <p>자연의 유기적 형태인 보로노이 패턴을 Grasshopper 알고리즘으로 연산하고, Rhino 3D의 정밀 곡면 모델링을 통해 실제 제품 및 환경 조형으로 구현해내는 프로세스를 탐구합니다.</p>
+  </details>
+
+  <details>
+    <summary><b>사용 장비 및 하드웨어 스펙 보기 (클릭해서 펼치기)</b></summary>
+    <p>ASUS TUF A14 (RTX 5060), 뱀부랩 A1 mini 3D 프린터 (0.2/0.4 노즐 및 PEI 플레이트 운용 중)</p>
+  </details>
+</div>
+
+<hr style="width: 80%;">
+<div style="text-align: center; font-size: 14px; color: #7d665d;">copyright 2026.09.08 신라대학교 산업디자인학과 박지범</div>
+
+</body>
+</html>
