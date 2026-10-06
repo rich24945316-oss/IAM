@@ -1,91 +1,87 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-
-<title>회원가입 </title> 
+<meta charset="UTF-8">
+<title>회원가입</title>
 <link rel="stylesheet" href="style.css">
-
 </head>
+<body>
 
-<body bgcolor=#e9bfaf>
-
-<div class="page-wrap">
-<div class="navigation">
-<a href=index.html>i am</a> | 
-<a href=homepage.html>web design</a> | 
-<a href=link.html>my link</a> | 
-<a href=gallery.html>gallery</a> | 
-<a href=membership.html>membership</a>
-
+<div class="header-container">
+  <div class="slogan-modern-bar">“Less, but better.” — Parametric & Form Design</div>
+  <div class="nav-container">
+    <a href="index.html" class="nav-menu">I AM</a> 
+    <a href="webdesign.html" class="nav-menu">WEB DESIGN</a> 
+    <a href="link.html" class="nav-menu">FAVORITE</a> 
+    <a href="gallery.html" class="nav-menu">GALLERY</a> 
+    <a href="membership.html" class="nav-menu">MEMBERSHIP</a>
+    <a href="skill.html" class="nav-menu">SKILL</a>
+  </div>
 </div>
-<div class="contents">
+<hr><br>
 
-<h1>회원가입</h1>
-
+<div class="common-box join-box">
 <form action="#" method="post">
-<font>
-- 이름 : <input type=text name="name" id="name id"> <br>
+  <div class="card-title">회원가입</div>
 
-- ID : <input type=text name="id" id="id"> <br>
-
-- PASSWORD : <input type=password name="password" id="password"> <br>
-
-- 성별 : 남<input type="radio" name="gender"> | 여 <input type="radio" name="gender"><br>
-
-- 관심분야 : 
-
-웹디자인 <input type="checkbox" name="interest"> | 
-
-그래픽디자인 <input type="checkbox" name="interest"> | 
-
-제품디자인 <input type="checkbox" name="interest"> | 
-
-가구디자인 <input type="checkbox" name="interest"> | 
-
-자동차디자인 <input type="checkbox" name="interest"><br>
-
-- 이메일 : <input type=email name="email" id="email"> <br>
-
-- 학년 : 
-
-<select>
-
-<option> 1학년
-
-<option> 2학년
-
-<option> 3학년
-
-<option> 4학년
-
-</select> <br>
-
-- 자기소개 : <br>
-
-<textarea rows=5 cols=60 placeholder="자기소개를 작성해 주세요">
-
-</textarea> <br>
-
-<input type=submit value="가입하기"> <input type=reset value="새로작성">
-
-
-
-
-</font>
+  <div style="margin-bottom: 8px;">
+    <b>이름</b><br>
+    <input type="text" name="name" id="name" placeholder="이름을 입력하세요">
+  </div>
+  
+  <div style="margin-bottom: 8px;">
+    <b>ID</b><br>
+    <input type="text" name="id" id="id" placeholder="아이디를 입력하세요">
+  </div>
+  
+  <div style="margin-bottom: 8px;">
+    <b>PASSWORD</b><br>
+    <input type="password" name="password" id="password" placeholder="비밀번호를 입력하세요">
+  </div>
+  
+  <div style="margin-bottom: 8px;">
+    <b>성별</b><br>
+    남 <input type="radio" name="gender"> &nbsp;&nbsp;|&nbsp;&nbsp; 여 <input type="radio" name="gender">
+  </div>
+  
+  <div style="margin-bottom: 8px;">
+    <b>관심분야</b><br>
+    웹디자인 <input type="checkbox" name="interest"> | 
+    그래픽디자인 <input type="checkbox" name="interest"> | 
+    제품디자인 <input type="checkbox" name="interest"> | 
+    가구디자인 <input type="checkbox" name="interest"> | 
+    자동차디자인 <input type="checkbox" name="interest">
+  </div>
+  
+  <div style="margin-bottom: 8px;">
+    <b>이메일</b><br>
+    <input type="email" name="email" id="email" placeholder="abc@naver.com">
+  </div>
+  
+  <div style="margin-bottom: 8px;">
+    <b>학년</b><br>
+    <select>
+      <option>1학년</option>
+      <option>2학년</option>
+      <option>3학년</option>
+      <option>4학년</option>
+    </select>
+  </div>
+  
+  <div style="margin-bottom: 12px;">
+    <b>자기소개</b><br>
+    <textarea rows="5" placeholder="자기소개를 작성해 주세요"></textarea>
+  </div>
+  
+  <div style="text-align: center; margin-top: 15px;">
+    <input type="submit" value="가입하기" class="btn-submit"> 
+    <input type="reset" value="새로작성" class="btn-reset">
+  </div>
 </form>
 </div>
 
-<div class="copyright">
-
-
-
-<hr width=80%>
-
-copyright 2026.09.08 신라대학교 산업디자인학과 박지범
-
-</div>
-
+<hr style="width: 80%;">
+<div style="text-align: center; font-size: 14px; color: #7d665d;">copyright 2026.09.08 신라대학교 산업디자인학과 박지범</div>
 
 </body>
-
 </html>
