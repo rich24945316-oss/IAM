@@ -1,0 +1,168 @@
+</html>
+
+
+
+<html>
+
+<head>
+
+<title>첫 홈페이지</title>
+<link rel="stylesheet" href="style.css"><!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>첫 홈페이지</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header-container">
+  <div class="slogan-modern-bar">“Less, but better.” — Parametric & Form Design</div>
+  <div class="nav-container">
+    <a href="index.html" class="nav-menu">I AM</a> 
+    <a href="webdesign.html" class="nav-menu">WEB DESIGN</a> 
+    <a href="link.html" class="nav-menu">FAVORITE</a> 
+    <a href="gallery.html" class="nav-menu">GALLERY</a> 
+    <a href="membership.html" class="nav-menu">MEMBERSHIP</a>
+    <a href="skill.html" class="nav-menu">SKILL</a>
+  </div>
+</div>
+<hr><br>
+
+<div class="common-box web-box">
+  <div class="card-title">인터넷 문서란?</div>
+
+  <div class="content-card">
+    <b>HTML 문서의 이해</b><br><br>
+    - <b>HTML 문서</b>이다.<br>
+    - <u>HyperText Markup Language</u>이다.<br>
+    - Hyper Text는 <i><span style="color: #ee0000;">글자를 클릭하면 다른 문서로 연결되는 기능</span></i>을 말한다.<br>
+    - Markup Language는 간단한 <u><b><i>태그로 사용하는 프로그래밍 언어</i></b></u>를 말한다.
+  </div>
+
+  <div class="content-card">
+    <b>기본 태그 요약 및 맛보기</b><br><br>
+    - <b>h (Head line)</b> : 제목체를 만들어 준다. (숫자 1~6)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;h1&gt;가장 큰 제목&lt;/h1&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><h1>가장 큰 제목</h1></div>
+
+    - <b>b (Bold)</b> : 굵은 글씨를 만들어 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;b&gt;굵은 텍스트 표현&lt;/b&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><b>굵은 텍스트 표현</b></div>
+
+    - <b>i (Italic)</b> : 이텔릭체 기울임꼴을 만들어 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;i&gt;기울임꼴 텍스트 표현&lt;/i&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><i>기울임꼴 텍스트 표현</i></div>
+
+    - <b>u (Underscore)</b> : 밑줄을 만들어 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;u&gt;밑줄 텍스트 표현&lt;/u&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><u>밑줄 텍스트 표현</u></div>
+  </div>
+
+  <div class="content-card">
+    <b>포트폴리오 핵심 레이아웃 및 인터랙션 명령어 모음</b><br><br>
+    - <b>hr (Horizontal Rule)</b> : 수평선을 그어 영역을 분리해 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;hr width="80%" align="left"&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><hr width="200" align="left"></div>
+
+    - <b>center</b> : 내용을 화면 정중앙으로 정렬해 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;center&gt;중앙 정렬 텍스트&lt;/center&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><div style="text-align: center;">중앙 정렬 텍스트</div></div>
+
+    - <b>mark</b> : 핵심 키워드에 형광펜 하이라이트 효과를 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;mark&gt;최우수 역량&lt;/mark&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><mark>최우수 역량</mark></div>
+
+    - <b>details / summary</b> : 클릭하면 내용이 펼쳐지는 아코디언 메뉴를 만든다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;details&gt;&lt;summary&gt;제목&lt;/summary&gt;&lt;p&gt;상세 내용&lt;/p&gt;&lt;/details&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: 
+    <div class="live-preview">
+      <details>
+        <summary><b>클릭해서 펼치기</b></summary>
+        <p>숨겨져 있던 상세 내용이 나타나는 인터랙션.</p>
+      </details>
+    </div>
+
+    - <b>input type="range"</b> : 드래그하여 수치를 조절하는 슬라이더 인터랙션을 만든다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>&lt;input type="range" min="0" max="100" value="75"&gt;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: 
+    <div class="live-preview">
+      작업 진행도 조절: <input type="range" min="0" max="100" value="75" class="interactive-slider" style="width: 150px;" oninput="document.getElementById('demoVal').innerText = this.value"> (<span id="demoVal">75</span>%)
+    </div>
+  </div>
+
+  <div class="content-card">
+    <b>포트폴리오 핵심 스타일(CSS) 원리 정리</b><br><br>
+    - <b>border-radius (모서리 둥글게)</b> : 딱딱한 사각형 모서리를 부드럽게 깎아 시각적 안정감을 준다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>border-radius: 15px;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><div class="demo-radius-only">오직 둥근 모서리만 적용된 박스</div></div><br>
+
+    - <b>box-shadow (입체 그림자)</b> : 평면 박스에 은은한 그림자를 주어 화면 위에 떠 있는 듯한 깊이감을 만든다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>box-shadow: 0 6px 20px rgba(79, 59, 51, 0.25);</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: <div class="live-preview"><div class="demo-shadow-only">오직 입체 그림자만 적용된 각진 박스</div></div><br>
+
+    - <b>flexbox (유연한 좌우 정렬)</b> : 여러 요소를 줄바꿈 없이 가로로 나란히 정렬하고 유연하게 배치한다.<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;코드: <code>display: flex; gap: 10px;</code><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;결과: 
+    <div class="live-preview">
+      <div class="demo-flex-example">
+        <div class="demo-flex-item">좌측 박스</div>
+        <div class="demo-flex-item">우측 박스</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr style="width: 80%;">
+<div style="text-align: center; font-size: 14px; color: #7d665d;">copyright 2026.09.08 신라대학교 산업디자인학과 박지범</div>
+
+</body>
+</html>
+
+</head>
+
+<body bgcolor=#e9bfaf>
+
+<div class="page-wrap">
+<div class="navigation">
+<a href=index.html>i am</a> | 
+<a href=homepage.html>web design</a> | 
+<a href=link.html>my link</a> | 
+<a href=gallery.html>gallery</a> | 
+<a href=membership.html>membership</a>
+
+</div>
+
+
+<div class="contents">
+<h1>인터넷 문서란?</h1>
+
+
+
+<font size=4 color=#4f3b33>
+
+- <b>html문서</b>이다.<br>
+
+- <u>HyperText Markup Language</u>이다.<br>
+
+- hyper text는 <i><font color=ee0000>글자를 클릭하면 다른 문서로 연결되는 기능</font></i>을 말한다.<br>
+
+- markup languege는 간단한 <u><b><i>태그로 사용하는 프로그래밍 언어</i></b></u>를 말한다.<br>
+
+- h : head line 약자로 제목체를 만들어 준다. 숫자 1~6으로 크기를 조절할 수 있다.<br>
+
+- b : bold 굵은 글씨, i : italic 이텔릭, u : underscore 밑줄<br>
+
+
+
+<br><br></div>
+
+<div class="copyright">
+
+copyright 2026.09.08 신라대학교 산업디자인학과 박지범
+</div>
+</font>
+
+</body>
+
+</html>
